@@ -8,6 +8,9 @@ import src.com.GFT.Teste4.models.Loja;
 import src.com.GFT.Teste4.models.VideoGame;
 
 public class Main {
+  public static void main(String[] args) {
+    
+  
   Livro l1 = new Livro("Harry Potter", 50, 50, "J.K Rowling", "fantasia", 3000);
   Livro l2 = new Livro("Senhor dos anéis", 60, 30, "J. R. R. Tolkien", "fantasia", 500);
   Livro l3 = new Livro("Java POO", 20, 50, "GFT", "educativo", 500);
@@ -24,11 +27,11 @@ public class Main {
   
   
   List<VideoGame> videoGames = new ArrayList<>();
-  videoGames.add(l1);
-  videoGames.add(l2);
-  videoGames.add(l3);
+  videoGames.add(ps4);
+  videoGames.add(ps4Usado);
+  videoGames.add(xbox);
 
-  Loja americanas = new Loja("Americanas", "123456789", livros, games);
+  Loja americanas = new Loja("Americanas", "123456789", livros, videoGames);
 
 
   l2.calculaImposto();
@@ -40,5 +43,5 @@ public class Main {
   americanas.listaLivros();
   americanas.listaVideogames();
   americanas.calcularPatrimonio();
-  
+  }
 }
