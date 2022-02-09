@@ -54,6 +54,7 @@ public class Loja {
   public void listaLivros() {
     if (!livros.isEmpty()) {
       livros.stream().forEach(l -> System.out.println(l.getNome()));
+      return;
     }
     System.out.println("A loja não tem livros em seu estoque.");
   }
@@ -61,6 +62,7 @@ public class Loja {
   public void listaVideogames() {
     if (!videoGames.isEmpty()) {
       videoGames.stream().forEach(v -> System.out.println(v.getNome()));
+      return;
     }
     System.out.println("A loja não tem video-games no seu estoque.");
   }

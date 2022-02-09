@@ -33,15 +33,27 @@ public class Main {
 
   Loja americanas = new Loja("Americanas", "123456789", livros, videoGames);
 
+System.out.println();
+  System.out.println("Imposto " + l1.getNome()+": " + l1.calculaImposto());
+  System.out.println("Imposto " + l2.getNome()+": " +l2.calculaImposto());
+  System.out.println("Imposto " + l3.getNome()+": " +l3.calculaImposto());
 
-  l2.calculaImposto();
-  l3.calculaImposto();
+  System.out.println("---------------------------------------");
 
-  ps4Usado.calculaImposto();
-  ps4Usado.calculaImposto();
-  
+  System.out.println("Imposto " + ps4.getNome()+": " + ps4.calculaImposto());
+  System.out.println("Imposto " + ps4Usado.getNome()+": " + ps4Usado.calculaImposto());
+  System.out.println("Imposto" + xbox.getNome()+": " + xbox.calculaImposto());
+
+  System.out.println("---------------------------------------");
+  System.out.println("Livros:");
   americanas.listaLivros();
+  System.out.println("---------------------------------------");
+  System.out.println("Video Games:");
   americanas.listaVideogames();
-  americanas.calcularPatrimonio();
+  System.out.println("---------------------------------------");
+
+  System.out.println("Patrimonio da loja "+americanas.getNome() +": "+ americanas.calcularPatrimonio());
+  System.out.println("---------------------------------------");
+
   }
 }
