@@ -17,7 +17,7 @@ public class Main {
 
 
   VideoGame ps4 = new VideoGame("PS4", 1800, 100, "Sony", "Slim", false);
-  VideoGame ps4Usado = new VideoGame("PS4", 1000, 7, "Sony", "Slim", true);
+  VideoGame ps4Usado = new VideoGame("PS4 USADO", 1000, 7, "Sony", "Slim", true);
   VideoGame xbox = new VideoGame("XBOX", 1500, 500, "Microsoft", "One", false);
 
   List<Livro> livros = new ArrayList<>();
@@ -42,7 +42,7 @@ System.out.println();
 
   System.out.println("Imposto " + ps4.getNome()+": " + ps4.calculaImposto());
   System.out.println("Imposto " + ps4Usado.getNome()+": " + ps4Usado.calculaImposto());
-  System.out.println("Imposto" + xbox.getNome()+": " + xbox.calculaImposto());
+  System.out.println("Imposto " + xbox.getNome()+": " + xbox.calculaImposto());
 
   System.out.println("---------------------------------------");
   System.out.println("Livros:");
